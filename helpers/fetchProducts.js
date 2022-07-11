@@ -4,7 +4,7 @@ const fetchProducts = () => {
   fetch(site)
     .then((response) => response.json())
     .then((data) => console.log(data.value))
-    .catch((error) => console.log(`Falhou \n${error}`))
+    .catch((error) => console.log(`Falhou \n${error}`));
 };
 
 if (typeof module !== 'undefined') {
