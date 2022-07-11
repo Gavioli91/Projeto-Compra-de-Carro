@@ -1,4 +1,4 @@
-const fetchProducts = async (product) => {
+const fetchProducts = async () => {
   try {
   const site = `https://api.mercadolibre.com/sites/MLB/search?q=computador=$(product)`;
     const productFetch = await fetch(site);
