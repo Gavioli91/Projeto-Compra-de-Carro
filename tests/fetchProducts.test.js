@@ -17,6 +17,6 @@ describe('1 - Teste a função fetchProducts', () => {
   })
 
   it('Test if calling the fetchProducts function with no argument returns an error with the message: "You must provide an url"', () => {
-    fetchProducts('');
+    fetchProducts('computador');
   })
 });
