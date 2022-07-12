@@ -20,7 +20,7 @@ describe('1 - Teste a função fetchProducts', () => {
     fetchProducts('computador');
   })
 
-  it('Test if calling the fetchProducts function with no argument returns an error with the message: "You must provide an url"', () => {
-    fetchProducts('computador');
+  it('Test if calling the fetchProducts function with no argument returns an error with the message: "You must provide an url"', async () => {
+    expect(await fetchProducts()).toEqual(new Error('You must provide an url'));
   })
 })
