@@ -8,11 +8,10 @@ const fetchProducts = async (product) => {
      return new Error('You must provide an url');
     }
 };
+fetchProducts('computador');
 
 if (typeof module !== 'undefined') {
   module.exports = {
     fetchProducts,
   };
 }
-
-fetchProducts('Assus');
