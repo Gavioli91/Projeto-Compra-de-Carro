@@ -64,4 +64,12 @@ const itemListener = async () => {
 
 itemListener();
 
+const cleanLittleCart = document.querySelector('.cart__items');
+const cleanButton = document.querySelector('.empty-cart');
+const emptyCart = () => {
+  cleanLittleCart.innerHTML = '';
+};
+
+cleanButton.addEventListener('click', emptyCart);
+
 window.onload = () => { };
